@@ -15,7 +15,7 @@ public class Book {
      */
 
     private String name;//这是名称
-    private String type;//类型
+    private String type;//这是类型
     private String area;
     private String des;
     private boolean finish;
