@@ -14,8 +14,8 @@ public class Book {
      * coverImg : http://imgs.juheapi.com/comic_xin/5559b86938f275fd560ad617.jpg
      */
 
-    private String name;//这是漫画的名称
-    private String type;//这是类型
+    private String name;//这是名称
+    private String type;//这是漫画的类型
     private String area;
     private String des;
     private boolean finish;
