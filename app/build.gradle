@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.example.administrator.photoviewdemo"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions {
+    }
+}
+repositories{
+    flatDir{
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'org.xutils:xutils:3.3.34'
+    compile 'com.wuxiaolong.pullloadmorerecyclerview:library:1.0.4'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile name: 'SMSSDK-2.0.2', ext: 'aar'
+    compile name: 'SMSSDKGUI-2.0.2', ext: 'aar'
+    compile files('libs/MobCommons-2016.0426.1819.jar')
+    compile files('libs/MobTools-2016.0426.1819.jar')
+    compile files('libs/ShareSDK-Core-2.7.2.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.2.jar')
+}
